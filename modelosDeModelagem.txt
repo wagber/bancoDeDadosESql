@@ -1,0 +1,52 @@
+Modelagem Básica
+
+Ex1.
+Formas de encontrar um cliente / Modelar um cliente
+
+TABELA
+CLIENTE
+
+NOME CARACTER(30)
+CPF NUMERICO(11)
+EMAIL CARACTER(30)
+TELEFONE CARACTER(30)
+SEXO CARACTER(1)
+ENDERECO CARACTER(100)
+
+------------------------------------------------------
+
+Modelagem Conceitual
+Rascunho
+
+Modelagem Lógica / Conceitual -> ADM de Dados
+-> Podemoes usar o BR Modelo
+
+------------------------------------------------------
+
+Modelagem Física -> AD ou DBA
+-> Script do Banco // Aqui saberei qual será meu Banco
+
+Modelo Físico
+//Codificando
+
+//Criar Banco
+CREATE DATABASE PROJETO;
+
+//Conectando Banco
+USE PROJETO;
+
+//Criando Tabela
+CREATE TABLE CLIENTE(
+    NOME VARCHAR (30),
+    SEXO CHAR(1),
+    EMAIL VARCHAR(30),
+    CPF INT(11),
+    TELEFONE VARCHAR(30),
+    ENDENCO VARCHAR(100)
+);
+
+//Verificando as Tabelas
+SHOW TABLE;
+
+//Descrevendo Tabelas
+DESC CLIENTE;
